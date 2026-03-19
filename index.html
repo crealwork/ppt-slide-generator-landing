@@ -746,7 +746,7 @@ function tryDownload() {
     a.click();
     URL.revokeObjectURL(url);
 
-    msg.textContent = '&#10003; 다운로드 완료! ~/.claude/skills/ 에 압축을 풀어주세요.';
+    msg.textContent = '✓ 다운로드 완료! ~/.claude/skills/ 에 압축을 풀어주세요.';
   } else {
     msg.className = 'download-msg error';
     msg.textContent = '비밀번호가 틀렸습니다.';
