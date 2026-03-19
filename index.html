@@ -634,57 +634,32 @@ body {
 <!-- Custom Template Guide -->
 <section class="template-section">
   <h2>나만의 테마 만들기</h2>
-  <p class="subtitle">themes/ 폴더에 .md 파일 하나 추가하면 자동으로 테마 목록에 표시됩니다</p>
+  <p class="subtitle">직접 만들 필요 없이, Claude Code한테 시키면 됩니다</p>
   <div class="template-card">
-    <h4 style="font-size:20px;font-weight:800;color:var(--navy);margin-bottom:8px;">테마 파일 구조</h4>
-    <p style="font-size:15px;color:#666;">아래 6개 섹션을 포함한 마크다운(.md) 파일을 작성하세요.</p>
-    <div class="template-structure">
+    <h4 style="font-size:20px;font-weight:800;color:var(--navy);margin-bottom:24px;">2단계면 끝</h4>
+    <div class="template-structure" style="grid-template-columns:1fr 1fr;">
       <div class="template-item">
         <h5>
-          <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#1A2A4F"><path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z"/></svg>
-          Brand Defaults
+          <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#1A2A4F"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"/></svg>
+          Step 1. 폴더 준비
         </h5>
-        <p>컬러 팔레트, 배경색, 폰트(Google Fonts CDN), 로고 경로 또는 텍스트 폴백</p>
-      </div>
-      <div class="template-item">
-        <h5>
-          <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#1A2A4F"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
-          Design Language
-        </h5>
-        <p>디자인 무드, 그림자 스타일, 장식 요소, 여백 규칙 정의</p>
+        <p>로고 파일과 브랜드 가이드라인(있다면)을 한 폴더에 넣어주세요. PDF, 이미지, 뭐든 OK.</p>
       </div>
       <div class="template-item">
         <h5>
           <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#1A2A4F"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg>
-          Tone &amp; Language
+          Step 2. Claude Code에 말하기
         </h5>
-        <p>텍스트 톤, 언어 설정, 작성 규칙 (한국어/영어 등)</p>
-      </div>
-      <div class="template-item">
-        <h5>
-          <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#1A2A4F"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 012.25-2.25h7.5A2.25 2.25 0 0118 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 004.5 9v.878m13.5-3A2.25 2.25 0 0119.5 9v.878m0 0a2.246 2.246 0 00-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0121 12v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6c0-1.243 1.007-2.25 2.25-2.25h13.5"/></svg>
-          7 Slide Types
-        </h5>
-        <p>Cover, Agenda, Section, Body(Text), Body(Data), Quote, Ending 각각 HTML + CSS</p>
-      </div>
-      <div class="template-item">
-        <h5>
-          <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#1A2A4F"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-          Data Visualization
-        </h5>
-        <p>차트 색상 규칙, 추천 차트 타입, 시각화 체크리스트</p>
-      </div>
-      <div class="template-item">
-        <h5>
-          <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#1A2A4F"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
-          Common Mistakes
-        </h5>
-        <p>해당 테마에서 자주 하는 실수 10가지 목록</p>
+        <p>"내 브랜드 테마 만들어줘. 로고랑 가이드라인은 [폴더 경로]에 있어" 라고 입력하면 자동으로 테마를 생성합니다.</p>
       </div>
     </div>
+    <div class="howto-code" style="margin-top:24px;">
+      <span class="comment"># Claude Code에서 이렇게 말하세요</span><br/>
+      <span class="cmd">"내 브랜드로 PPT 테마 만들어줘. 브랜드 자료는 C:/Users/me/brand/ 에 있어"</span>
+    </div>
     <div class="tip-box">
-      <h5>브랜드 컬러 찾는 팁</h5>
-      <p>회사 웹사이트에서 개발자 도구(F12)로 컬러 확인하거나, Coolors.co에서 팔레트를 생성하세요. 브랜드 가이드라인 PDF가 있다면 그대로 사용하면 됩니다. 기존 테마 파일(minimal.md)을 복사해서 색상만 바꾸는 것이 가장 빠른 방법입니다.</p>
+      <h5>폴더에 뭘 넣으면 되나요?</h5>
+      <p>로고 파일(PNG/SVG)만 있어도 됩니다. 브랜드 가이드라인 PDF, 컬러 팔레트 이미지, PPT 템플릿 등이 있으면 더 정확한 테마가 만들어집니다. Claude Code가 파일을 분석해서 컬러, 폰트, 디자인 언어를 자동으로 추출합니다.</p>
     </div>
   </div>
 </section>
