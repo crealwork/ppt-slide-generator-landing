@@ -624,10 +624,11 @@ body {
     </div>
   </div>
   <div class="howto-code">
-    <span class="comment"># macOS / Linux</span><br/>
-    <span class="cmd">cp -r ppt-slide-generator ~/.claude/skills/</span><br/><br/>
+    <span class="comment"># macOS / Linux (Downloads 폴더에서 압축 풀었다면)</span><br/>
+    <span class="cmd">cp -r ~/Downloads/ppt-slide-generator ~/.claude/skills/</span><br/><br/>
     <span class="comment"># Windows (PowerShell)</span><br/>
-    <span class="cmd">Copy-Item -Recurse ppt-slide-generator "$env:USERPROFILE\.claude\skills\"</span>
+    <span class="cmd">Copy-Item -Recurse "$env:USERPROFILE\Downloads\ppt-slide-generator" "$env:USERPROFILE\.claude\skills\"</span><br/><br/>
+    <span class="comment"># 다른 경로에 압축 풀었다면 해당 경로로 바꿔주세요</span>
   </div>
 </section>
 
